@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Heart diesease predictor</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* html{
+            overflow: hidden;
+        } */
+
+        body{
+           
+            height: 1200px;
+             background-size: cover;
+            background-repeat: no-repeat;
+            /* background-color: aquamarine; */
+            background-image:linear-gradient(to right, rgb(124, 204, 238), #ee9edbec);
+             /* background: url('../templates/register1.jpg') ; 
+              */
+        }
+
+        #login-form-container{
+            position: absolute;
+            top:300px;
+            margin-top:2%;
+            margin-left: 3%;
+            width: 1200px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        h1{
+            text-align: center;
+            color: brown;
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+    </style>
+</head>	
+<body>
+    <h1>HEART DIESEASE PREDICTOR</h1>
+    <br>
+    <br>
+    <br>
+    <div id="login-form-container">
+        <form action="classify" method="GET">
+            <div class="card" style="width: 500px; background-color:lightblue; color:black">
+            <div class="card-content">
+                <div class="media">
+                <div class="is-size-4 has-text-centered" style="color:red">!!!!!!......Please enter correct details......!!!!!!</div>
+                </div>
+                <div class="content">
+
+                <div class="field">
+                    <p class="control">
+                    Age: <input class="input" type="number" value='0.00' step='0.01' name="Age" id="Age">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                    Sex: <input class="input" type="number" value='0.00' step='0.01' name="Sex" id="Sex">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                    Chest Pair: <input class="input" type="number" value='0.00' step='0.01' name="Chest pain type" id="Chest pain type">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                    BP: <input class="input" type="number" value='0.00' step='0.01' name="BP" id="BP">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                    Cholestrol: <input class="input" type="number" value='0.00' step='0.01' name="Cholesterol" id="Cholesterol">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                        FBS over 120: <input class="input" type="number" value='0.00' step='0.01' name="FBS over 120" id="FBS over 120">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                        EKG results: <input class="input" type="number" value='0.00' step='0.01' name="EKG results" id="EKG results">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                        Max HR: <input class="input" type="number" value='0.00' step='0.01' name="Max HR" id="Max HR">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                        Exercise angina: <input class="input" type="number" value='0.00' step='0.01' name="Exercise angina" id="Exercise angina">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                        ST depression: <input class="input" type="number" value='0.00' step='0.01' name="ST depression" id="ST depression">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                        Slope of ST: <input class="input" type="number" value='0.00' step='0.01' name="Slope of ST" id="Slope of ST">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                        Number of vessels fluro: <input class="input" type="number" value='0.00' step='0.01' name="Number of vessels fluro" id="Number of vessels fluro">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                        Thallium: <input class="input" type="number" value='0.00' step='0.01' name="Thallium" id="Thallium">
+                    </p>
+                </div>
+                
+                <div class="field">
+                    
+                    <button class="button is-fullwidth is-rounded is-success">Submit</button>
+              
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
