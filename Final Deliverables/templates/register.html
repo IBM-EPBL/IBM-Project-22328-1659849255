@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/style_reg.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h3 style="color:cyan; text-align: center;">Please complete the registration process to continue!!</h3>
+    <br>
+      <h1 class="form-title">Registration</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName"> Name</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Blood Group</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your blood group"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter your Phone Number"/>
+          </div>
+          <div class="user-input-box">
+            <label for="password">Age</label>
+            <input type="text"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your Age"/>
+          </div>
+          
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+          </div>
+        </div>
+      <center>
+            <a href="http://127.0.0.1:5000/home">
+          <input type="button" value=" REGISTER " style="border:5px solid green;background-color:#118a3b;">
+          </a>
+        </center>
+        
+      </form>
+    </div>
+  </body>
+</html>
